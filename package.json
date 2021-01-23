@@ -1,0 +1,53 @@
+{
+  "name": "gg",
+  "description": "The EZ way to generates .gitignore",
+  "version": "0.0.1",
+  "author": "xue-yuan @xue-yuan",
+  "bin": {
+    "gg": "./bin/run"
+  },
+  "bugs": "https://github.com/xue-yuan/gg/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3",
+    "chalk": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "node-fetch": "^2.6.1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@types/node": "^10",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "ts-node": "^8",
+    "typescript": "^3.3"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/xue-yuan/gg",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "gg"
+  },
+  "repository": "xue-yuan/gg",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "types": "lib/index.d.ts"
+}
