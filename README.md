@@ -1,11 +1,13 @@
 Gitignore Generator
 ==
 
+# Warning
+> This version is archived. Check out the new version which is built by golang/spf13 [[GG](https://github.com/xue-yuan/gg)]!
+
+---
+
 The EZ way to generates .gitignore🍿.
 > You can find those templates in [github/gitignore]([https://](https://github.com/github/gitignore))
-
-***This is demo version. Stay tuned for more information 🍻.***
-
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/gg.svg)](https://npmjs.org/package/gg)
